@@ -21,7 +21,7 @@ public class LoginTest {
         WebDriverManager.chromedriver().setup();
 //        WebDriver driver = new ChromeDriver();
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless");
+//        options.addArguments("--headless");
         WebDriver driver = new ChromeDriver(options);
         driver.get("http://localhost:8080");
 

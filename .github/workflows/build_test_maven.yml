@@ -18,8 +18,8 @@ jobs:
 #      - name: Setup env step 1
 #        run: mvn clean install
       - name: Setup env step 2
-        run: java -jar target/mot-cert-support-app-java-*-exec.jar
-      - name: sleep
-        run: sleep 10
+        run: |
+          java -jar target/mot-cert-support-app-java-*-exec.jar &
+          sleep 10
       - name: Run E2E checks
         run: mvn test -Dtest=LoginTest
