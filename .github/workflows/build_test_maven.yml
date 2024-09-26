@@ -21,3 +21,9 @@ jobs:
           sleep 10
       - name: Run E2E checks
         run: mvn test -Dtest=LoginTest
+      - name: Publish Test Results
+        uses: EnricoMi/publish-unit-test-result-action/composite@v2
+        if: always()
+        with:
+          files: |
+            target/surefire-reports/*.xml

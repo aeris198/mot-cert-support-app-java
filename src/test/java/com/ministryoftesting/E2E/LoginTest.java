@@ -21,28 +21,9 @@ public class LoginTest {
     public void testPageUpdatesToProjectPageAfterLogin() {
         // Arrange
         WebDriverManager.chromedriver().setup();
-//        WebDriver driver = new ChromeDriver();
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless");
         WebDriver driver = new ChromeDriver(options);
-
-//        WebDriver driver;
-//        // Try to initialize ChromeDriver
-//        try {
-//            WebDriverManager.chromedriver().setup();
-//            ChromeOptions chromeOptions = new ChromeOptions();
-//            chromeOptions.addArguments("--headless");
-//            driver = new ChromeDriver(chromeOptions);
-//            System.out.println("ChromeDriver initialized successfully.");
-//        } catch (Exception e) {
-//            System.out.println("Failed to initialize ChromeDriver, trying FirefoxDriver...");
-//            WebDriverManager.firefoxdriver().setup();
-//            FirefoxOptions firefoxOptions = new FirefoxOptions();
-//            firefoxOptions.addArguments("--headless");
-//            driver = new FirefoxDriver(firefoxOptions);
-//            System.out.println("FirefoxDriver initialized successfully.");
-//        }
-
 
         driver.get("http://localhost:8080");
 
