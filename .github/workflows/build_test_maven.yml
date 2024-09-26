@@ -15,9 +15,10 @@ jobs:
           distribution: 'temurin'
       - name: Build project and run unit and API checks
         run: mvn --batch-mode package
+      - name: Setup env step 1
+        run: mvn clean install
       - name: Run E2E checks
-        run: |
-          mvn clean install &
+        run:
           java -jar target/mot-cert-support-app-java-*-exec.jar &
           sleep 10
           mvn test -Dtest=LoginTest
