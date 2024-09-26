@@ -15,8 +15,6 @@ jobs:
           distribution: 'temurin'
       - name: Build project and run unit and API checks
         run: mvn --batch-mode package
-#      - name: Setup env step 1
-#        run: mvn clean install
       - name: Setup env step 2
         run: |
           java -jar target/mot-cert-support-app-java-*-exec.jar &
