@@ -17,6 +17,6 @@ jobs:
         run: mvn --batch-mode package
       - name: Run E2E checks
         run: |
-          java -jar target//mot-cert-support-app-java-*-exec.jar &
-          sleep 30
+          java -jar target/mot-cert-support-app-java-*-exec.jar &
+          sleep 10
           mvn test -Dtest=LoginTest
