@@ -19,9 +19,7 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 import java.time.Duration;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-@ExtendWith(SpringExtension.class)
-@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT, classes = TimesheetManagerApplication.class)
-@ActiveProfiles("dev")
+
 public class LoginTest {
 
     @Test
