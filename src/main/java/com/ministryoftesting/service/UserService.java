@@ -1,7 +1,6 @@
 package com.ministryoftesting.service;
 
 import com.ministryoftesting.db.UserDB;
-import com.ministryoftesting.models.CreatedID;
 import com.ministryoftesting.models.user.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

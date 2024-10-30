@@ -1,0 +1,19 @@
+{
+    "name": "Project 1",
+    "description": "Ate Cake",
+    "total": 16,
+    "entries": [
+        {
+            "id": 2,
+            "date": "2050-01-01",
+            "hours": 8,
+            "description": "Ate cake"
+        },
+        {
+            "id": 3,
+            "date": "2050-01-01",
+            "hours": 8,
+            "description": "Ate cake"
+        }
+    ]
+}

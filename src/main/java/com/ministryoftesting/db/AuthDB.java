@@ -2,19 +2,13 @@ package com.ministryoftesting.db;
 
 import com.ministryoftesting.models.auth.Credentials;
 import com.ministryoftesting.models.auth.LoginResult;
-import org.h2.jdbcx.JdbcDataSource;
-import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Component;
 
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.Reader;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.time.LocalDate;
-import java.util.Scanner;
 
 @Component
 public class AuthDB extends BaseDB {

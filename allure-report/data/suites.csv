@@ -1,0 +1,4 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","3025","testPageUpdatesToProjectPageAfterLogin()","","Wed Oct 30 09:37:36 GMT 2024","passed","Wed Oct 30 09:37:39 GMT 2024","","com.ministryoftesting.intermediateCertTests.maintenanceExerciseAfterFix.LoginTest","com.ministryoftesting.intermediateCertTests.maintenanceExerciseAfterFix.LoginTest","testPageUpdatesToProjectPageAfterLogin"
+"","1293","Test getting a project","","Wed Oct 30 09:36:17 GMT 2024","passed","Wed Oct 30 09:36:18 GMT 2024","","com.ministryoftesting.intermediateCertTests.reporting.api.ProjectApiTest","com.ministryoftesting.intermediateCertTests.reporting.api.ProjectApiTest","testGettingProject2"
+"","3839","Test logging in","","Wed Oct 30 09:34:46 GMT 2024","passed","Wed Oct 30 09:34:50 GMT 2024","","Test logging in","com.ministryoftesting.intermediateCertTests.reporting.ui.LoginTest","testStandardUserCanLogin"

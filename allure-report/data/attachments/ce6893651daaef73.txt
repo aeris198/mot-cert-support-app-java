@@ -1,0 +1,56 @@
+Request method:	POST
+Request URI:	http://localhost:8080/v1/auth/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "admin@test.com",
+    "password": "password123"
+}
+HTTP/1.1 200 
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 29 Oct 2024 16:26:30 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "token": "caZSzdoMLWa3sPpq",
+    "admin": true,
+    "id": 1
+}
+Request method:	GET
+Request URI:	http://localhost:8080/v1/poject/2
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer caZSzdoMLWa3sPpq
+				Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 29 Oct 2024 16:26:30 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "timestamp": "2024-10-29T16:26:30.571+00:00",
+    "status": 404,
+    "error": "Not Found",
+    "path": "/v1/poject/2"
+}
